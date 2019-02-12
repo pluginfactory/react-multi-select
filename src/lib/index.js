@@ -1,2 +1,2 @@
-import TextInput from "./TextInput";
-export { TextInput };
+import Component from "./Component";
+export { Component };
