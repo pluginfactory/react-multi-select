@@ -1,34 +1,40 @@
 {
   "name": "multi-select-react",
   "version": "0.1.0",
+  "description": "A react library to render the custom multi-select view",
   "main": "dist/index.js",
+  "author": {
+    "name": "gaurav sharma",
+    "email": "sharma02gaurav@gmail.com",
+    "url": "https://medium.com/@sharma02gaurav"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluginfactory/react-multi-select.git"
+  },
   "module": "dist/index.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "start": "rollup -c",
-    "build-examples": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "build": "rimraf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+    "build": "rm -Rf build && ./node_modules/.bin/webpack --config ./webpack.config.js -p"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/plugin-external-helpers": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-latest": "^6.24.1",
-    "postcss-modules": "^1.4.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.6.0",
+    "mini-css-extract-plugin": "^0.5.0",
     "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-scripts": "^2.1.5",
-    "rimraf": "^2.6.3",
-    "rollup": "^1.1.2",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-postcss": "^2.0.3"
-  }
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {}
 }
