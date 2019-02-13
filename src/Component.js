@@ -20,12 +20,12 @@ import './Component.scss';
  * @property {String} classes a comma separated string to represent the custom classes for styling
  */
 export const MultiSelect = ({
-	items,
-	selected,
-	identificationKey,
-	valueKey,
-	onSelect,
-	onUnselect,
+	items = [],
+	selected = [],
+	identificationKey = 'id',
+	valueKey = 'value',
+	onSelect = () => { alert('define a custom function or undefined.') },
+	onUnselect = () => { alert('define a custom function or undefined.') },
 	activeValue,
 	multi = true,
 	classes,
