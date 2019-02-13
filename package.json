@@ -1,16 +1,12 @@
 {
-  "name": "multi-select-react",
+  "name": "multi-select-reakt",
   "version": "0.1.0",
   "description": "A react library to render the custom multi-select view",
-  "main": "dist/index.js",
-  "author": {
-    "name": "gaurav sharma",
-    "email": "sharma02gaurav@gmail.com",
-    "url": "https://medium.com/@sharma02gaurav"
-  },
+  "main": "build/main.bundle.js",
+  "author": "gaurav sharma <sharma02gaurav@gmail.com> (https://medium.com/@sharma02gaurav)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pluginfactory/react-multi-select.git"
+    "url": "git+https://github.com/pluginfactory/react-multi-select.git"
   },
   "module": "dist/index.js",
   "files": [
@@ -36,5 +32,10 @@
     "webpack": "^4.29.3",
     "webpack-cli": "^3.2.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/pluginfactory/react-multi-select/issues"
+  },
+  "homepage": "https://github.com/pluginfactory/react-multi-select#readme",
+  "license": "ISC"
 }

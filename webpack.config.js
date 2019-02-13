@@ -16,19 +16,18 @@ const config = {
 	entry: `${APP_DIR}/index.js`,
 	output: {
 		path: BUILD_DIR,
-		filename: '[name].bundle.js',
+		filename: 'index.js',
+		libraryTarget: 'commonjs'
 	},
-
-	devServer: {
-		contentBase: BUILD_DIR,
-	},
-
 	module: {
 		rules: [
 			{
 				test: /\.jsx?/,
 				include: APP_DIR,
 				loader: 'babel-loader',
+				options: {
+					presets: ['@babel/preset-env', '@babel/preset-react']
+				}
 			},
 			{
 				test: /\.(sass|scss)$/,
