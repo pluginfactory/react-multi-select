@@ -1,6 +1,6 @@
 {
   "name": "multi-select-reakt",
-  "version": "0.0.13",
+  "version": "0.0.3",
   "description": "A react library to render the custom multi-select view",
   "main": "build/index.js",
   "author": "gaurav sharma <sharma02gaurav@gmail.com> (https://medium.com/@sharma02gaurav)",
