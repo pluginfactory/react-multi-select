@@ -19,7 +19,7 @@ import './Component.scss';
  * @property {Boolean} multi indicating whether the viwe is multi select or not
  * @property {String} classes a comma separated string to represent the custom classes for styling
  */
-export default ({
+export const MultiSelect = ({
 	items,
 	selected,
 	identificationKey,
